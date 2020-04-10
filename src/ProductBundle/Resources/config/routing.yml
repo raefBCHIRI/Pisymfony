@@ -1,0 +1,78 @@
+product:
+    path:     /
+    defaults: { _controller: ProductBundle:Default:index }
+create:
+    path:     /addProd
+    defaults: { _controller: ProductBundle:Produit:create }
+
+showProd:
+    path:     /showProd
+    defaults: { _controller: ProductBundle:Produit:showProduit }
+
+prod_deleteTotal:
+    path:     /deleteAll/{idP}
+    defaults: { _controller: ProductBundle:Produit:deleteProd }
+
+prod_delete:
+    path:     /delete/{idP}
+    defaults: { _controller: ProductBundle:Produit:annuler }
+
+prod_update:
+    path:     /update/{idP}
+    defaults: { _controller: ProductBundle:Produit:updateProd }
+
+createCateg:
+    path:     /addCateg
+    defaults: { _controller: ProductBundle:Produit:createCateg }
+
+showCategProd:
+    path:     /showCategProd
+    defaults: { _controller: ProductBundle:Produit:showCategoryProduit }
+Categprod_delete:
+    path:     /deleteCateg/{idTp}
+    defaults: { _controller: ProductBundle:Produit:deleteCategProd }
+
+prod_delete:
+    path:     /delete/{idP}
+    defaults: { _controller: ProductBundle:Produit:annuler }
+
+showHistoryProd:
+    path:     /HistoryProd
+    defaults: { _controller: ProductBundle:Produit:showHistoryProduit }
+
+showProdClient:
+    path:     /showProdClient
+    defaults: { _controller: ProductBundle:Produit:showProduitClient }
+showProduitClientSingle:
+    path:     /showProduitClientSingle{idP}
+    defaults: { _controller: ProductBundle:Produit:showProduitClientSingle }
+
+
+upProduitClientSingle:
+    path:     /updateClient{idP}
+    defaults: { _controller: ProductBundle:Produit:updateClient }
+
+
+
+cart_aff:
+    path:     /panier
+    defaults: { _controller: ProductBundle:Cart:index }
+
+
+
+cart_add:
+    path:     /panier/add/{idP}
+    defaults: { _controller: ProductBundle:Cart:add }
+
+
+cart_remove:
+    path:     /panier/remove/{idP}
+    defaults: { _controller: ProductBundle:Cart:remove }
+
+showHighPrice:
+    path:     /highPrice
+    defaults: { _controller: ProductBundle:Produit:high }
+showLowPrice:
+    path:     /lowPrice
+    defaults: { _controller: ProductBundle:Produit:low }
+
