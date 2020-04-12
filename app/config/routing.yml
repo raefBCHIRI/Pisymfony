@@ -1,3 +1,7 @@
+circuits:
+    resource: "@CircuitsBundle/Resources/config/routing.yml"
+    prefix:   /Circuits
+
 user:
     resource: "@UserBundle/Controller/"
     type:     annotation

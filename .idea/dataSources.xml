@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="veloo@localhost" uuid="11de596f-6dab-487f-8291-adce32f638b4">
+    <data-source source="LOCAL" name="veloo@localhost" uuid="fa1a3203-d2d4-4ee6-9878-cccf9819b362">
       <driver-ref>mariadb</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.mariadb.jdbc.Driver</jdbc-driver>
