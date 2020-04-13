@@ -1,4 +1,73 @@
 {% extends 'base2.html.twig' %}
 {% block content %}
-    ezzzzzz
+
+
+    <script type="text/javascript" src="{{ asset('vendor/js/socialite.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('vendor/js/socialite.min.js') }}"></script>
+    <!--...-->
+
+
+
+    <script>
+        $(document).ready(function() {
+            Socialite.load();
+        });
+    </script>
+
+
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">
+                    <i class="fa fa-list" aria-hidden="true"></i>
+                    Liste de circuits
+                </h3>
+                <br>
+                <br>
+
+
+                <!-- /.card-header -->
+                <div class="card-body table-responsive p-0" data-bgColor="red">
+                    <table id="recherchetable" class="table table-bordered table-striped" border="2" bgcolor="#8b0000">
+                        <thead>
+                        <tr>
+
+
+                            <th>Nom</th>
+                            <th>Depart</th>
+                            <th>Pause</th>
+                            <th>End</th>
+                            <th>Difficulty</th>
+                            
+
+
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {% for i in circuits %}
+                            <tr>
+                                <td>{{ i.nom}}</td>
+                                <td>{{ i.depart}}</td>
+                                <td>{{ i.pause}}</td>
+                                <td>{{ i.end}}</td>
+                                <td>{{ i.difficulty}}</td>
+
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                        <tfoot>
+                        <tr>
+
+
+                        </tr>
+
+                        </tfoot>
+                    </table>
+                </div>
+                <!-- /.card-body -->
+
+            </div>
+            <!-- /.card -->
+
+        </div>
 {% endblock %}

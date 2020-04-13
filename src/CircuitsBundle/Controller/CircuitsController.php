@@ -9,7 +9,9 @@ class CircuitsController extends Controller
 {
     public function getCircuitsAction()
     {
-        return $this->render('@Circuits/Circuits/get_circuits.html.twig');
+        $circuits = $this->getDoctrine()->getRepository(\CircuitsBundle\Entity\Circuit::class)->findAll();
+
+        return $this->render('@Circuits/Circuits/get_circuits.html.twig', array('circuits' => $circuits));
     }
 
 }
