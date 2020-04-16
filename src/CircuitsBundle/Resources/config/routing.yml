@@ -3,3 +3,36 @@ get_circuits:
     path:     /getCircuits
     defaults: { _controller: CircuitsBundle:Circuits:getCircuits }
 
+get_stations:
+    path:     /getStations
+    defaults: { _controller: CircuitsBundle:Stations:getStations }
+
+
+createc:
+    path:     /addCircuit
+    defaults: { _controller: CircuitsBundle:Circuits:create }
+
+
+circuit_delete:
+    path:     /delete/{id}
+    defaults: { _controller: CircuitsBundle:Circuits:deleteCircuit }
+
+
+station_delete:
+    path:    /deleteS/{id}
+    defaults: { _controller: CircuitsBundle:Stations:deleteStation }
+
+
+
+update_circuit:
+        path:     /update/{id}
+        defaults: { _controller: CircuitsBundle:Circuits:updateCircuit }
+
+update_station:
+    path:     /updateS/{id}
+    defaults: { _controller: CircuitsBundle:Stations:updateStation }
+
+
+creates:
+    path:     /addStation
+    defaults: { _controller: CircuitsBundle:Stations:ajouter }

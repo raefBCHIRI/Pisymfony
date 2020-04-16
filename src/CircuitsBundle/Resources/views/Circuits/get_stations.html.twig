@@ -20,7 +20,7 @@
             <div class="card-header">
                 <h3 class="card-title">
                     <i class="fa fa-list" aria-hidden="true"></i>
-                    Liste de circuits
+                    Liste de stations
                 </h3>
                 <br>
                 <br>
@@ -34,29 +34,26 @@
 
 
                             <th>Nom</th>
-                            <th>Depart</th>
-                            <th>Pause</th>
-                            <th>End</th>
-                            <th>Difficulty</th>
+                            <th>Lattitude</th>
+                            <th>Longitude</th>
 
 
 
                         </tr>
                         </thead>
                         <tbody>
-                        {% for i in circuits %}
+                        {% for i in stations %}
                             <tr>
                                 <td>{{ i.nom}}</td>
-                                <td>{{ i.depart.nom}}</td>
-                                <td>{{ i.pause.nom}}</td>
-                                <td>{{ i.end.nom}}</td>
-                                <td>{{ i.difficulty}}</td>
-                                <td><a href="{{ path('update_circuit',{'id':i.id}) }}">
+                                <td>{{ i.lattitude}}</td>
+                                <td>{{ i.longitude}}</td>
+                                <td><a href="{{ path('update_station',{'id':i.id}) }}">
                                         <button type="button" class="btn btn-primary">
                                             <i class="fa fa-refresh" aria-hidden="true"></i>
                                             Modifier
                                         </button></a></td>
-                                <td><a href="{{ path('circuit_delete',{'id':i.id}) }}">
+
+                                <td><a href="{{ path('station_delete',{'id':i.id}) }}">
                                         <button type="button" class="btn btn-danger" >
                                             <i class="fa fa-trash" aria-hidden="true"></i>   Supprimer une ligne
                                         </button></a>

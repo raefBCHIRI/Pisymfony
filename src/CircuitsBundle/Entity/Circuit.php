@@ -13,11 +13,11 @@ use Doctrine\ORM\Mapping as ORM;
 class Circuit
 {
     /**
-     * @var int
+     * @var integer
      *
-     * @ORM\Column(name="id", type="integer")
+     * @ORM\Column(name="id", type="integer", nullable=false)
      * @ORM\Id
-     * @ORM\GeneratedValue(strategy="AUTO")
+     * @ORM\GeneratedValue(strategy="IDENTITY")
      */
     private $id;
 
@@ -29,23 +29,23 @@ class Circuit
     private $nom;
 
     /**
-     * @var string
-     *
-     * @ORM\Column(name="depart", type="string", length=50)
+     * @var integer
+     * @ORM\ManyToOne(targetEntity="CircuitsBundle\Entity\Station")
+     * @ORM\JoinColumn(name="depart",referencedColumnName="id")
      */
     private $depart;
 
     /**
-     * @var string
-     *
-     * @ORM\Column(name="pause", type="string", length=50)
+     * @var integer
+     * @ORM\ManyToOne(targetEntity="CircuitsBundle\Entity\Station")
+     * @ORM\JoinColumn(name="pause",referencedColumnName="id")
      */
     private $pause;
 
     /**
-     * @var string
-     *
-     * @ORM\Column(name="end", type="string", length=50)
+     * @var integer
+     * @ORM\ManyToOne(targetEntity="CircuitsBundle\Entity\Station")
+     * @ORM\JoinColumn(name="end",referencedColumnName="id")
      */
     private $end;
 
@@ -92,23 +92,7 @@ class Circuit
     }
 
     /**
-     * Set depart
-     *
-     * @param string $depart
-     *
-     * @return Circuit
-     */
-    public function setDepart($depart)
-    {
-        $this->depart = $depart;
-
-        return $this;
-    }
-
-    /**
-     * Get depart
-     *
-     * @return string
+     * @return int
      */
     public function getDepart()
     {
@@ -116,52 +100,14 @@ class Circuit
     }
 
     /**
-     * Set pause
-     *
-     * @param string $pause
-     *
-     * @return Circuit
+     * @param int $depart
      */
-    public function setPause($pause)
+    public function setDepart($depart)
     {
-        $this->pause = $pause;
-
-        return $this;
+        $this->depart = $depart;
     }
 
-    /**
-     * Get pause
-     *
-     * @return string
-     */
-    public function getPause()
-    {
-        return $this->pause;
-    }
 
-    /**
-     * Set end
-     *
-     * @param string $end
-     *
-     * @return Circuit
-     */
-    public function setEnd($end)
-    {
-        $this->end = $end;
-
-        return $this;
-    }
-
-    /**
-     * Get end
-     *
-     * @return string
-     */
-    public function getEnd()
-    {
-        return $this->end;
-    }
 
     /**
      * Set difficulty
@@ -178,6 +124,38 @@ class Circuit
     }
 
     /**
+     * @return int
+     */
+    public function getPause()
+    {
+        return $this->pause;
+    }
+
+    /**
+     * @param int $pause
+     */
+    public function setPause($pause)
+    {
+        $this->pause = $pause;
+    }
+
+    /**
+     * @return int
+     */
+    public function getEnd()
+    {
+        return $this->end;
+    }
+
+    /**
+     * @param int $end
+     */
+    public function setEnd($end)
+    {
+        $this->end = $end;
+    }
+
+    /**
      * Get difficulty
      *
      * @return string
@@ -186,5 +164,8 @@ class Circuit
     {
         return $this->difficulty;
     }
+
 }
+
+
 
