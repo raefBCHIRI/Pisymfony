@@ -1,7 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3182d3a6-d933-446a-affd-04360eab3188" name="Default Changelist" comment="" />
+    <list default="true" id="3182d3a6-d933-446a-affd-04360eab3188" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/wwwPiSymfony.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/wwwPiSymfony.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/AppKernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/AppKernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/views/base2.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/base2.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProductBundle/Controller/CartController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProductBundle/Controller/CartController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProductBundle/Controller/ProduitController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProductBundle/Controller/ProduitController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProductBundle/Entity/Produit.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProductBundle/Entity/Produit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProductBundle/Form/ProduitType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProductBundle/Form/ProduitType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProductBundle/Resources/config/routing.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProductBundle/Resources/config/routing.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProductBundle/Resources/views/Admin/afficheCategoryProduitAdmin.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProductBundle/Resources/views/Admin/afficheCategoryProduitAdmin.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProductBundle/Resources/views/Admin/afficheProduitAdmin.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProductBundle/Resources/views/Admin/afficheProduitAdmin.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProductBundle/Resources/views/Admin/ajouterProduit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProductBundle/Resources/views/Admin/ajouterProduit.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProductBundle/Resources/views/Client/afficheProduit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProductBundle/Resources/views/Client/afficheProduit.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProductBundle/Resources/views/Client/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProductBundle/Resources/views/Client/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProductBundle/Resources/views/Client/showSingle.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProductBundle/Resources/views/Client/showSingle.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProductBundle/Resources/views/Client/updateProduit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProductBundle/Resources/views/Client/updateProduit.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UserBundle/Controller/DefaultController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserBundle/Controller/DefaultController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UserBundle/Resources/config/routing.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserBundle/Resources/config/routing.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,6 +62,16 @@
       </path>
     </expand>
     <select />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\wamp64\www\PiSymfony\.idea" />
+      </set>
+    </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -83,9 +119,12 @@
       <path value="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle" />
       <path value="$PROJECT_DIR$/vendor/knplabs/knp-paginator-bundle" />
       <path value="$PROJECT_DIR$/vendor/knplabs/knp-components" />
+      <path value="$PROJECT_DIR$/vendor/knplabs/knp-snappy-bundle" />
+      <path value="$PROJECT_DIR$/vendor/knplabs/knp-snappy" />
     </include_path>
   </component>
   <component name="ProjectId" id="1ZRXqqu2FAFWZhlzdCRvCXoXbqn" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -94,10 +133,11 @@
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mariadb" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
-    <property name="settings.editor.selected.configurable" value="reference.idesettings.emmet" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.zend.framework.tool" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -141,6 +181,18 @@
       <workItem from="1586333995192" duration="758000" />
       <workItem from="1586463986548" duration="6535000" />
       <workItem from="1586529452524" duration="234000" />
+      <workItem from="1586552737623" duration="7159000" />
+      <workItem from="1586598985329" duration="5977000" />
+      <workItem from="1586813317783" duration="10650000" />
+      <workItem from="1586977309526" duration="16616000" />
+      <workItem from="1588207753871" duration="19149000" />
+      <workItem from="1588467100329" duration="8716000" />
+      <workItem from="1588722274924" duration="3528000" />
+      <workItem from="1588776239536" duration="8855000" />
+      <workItem from="1588950049408" duration="2996000" />
+      <workItem from="1589063861331" duration="1995000" />
+      <workItem from="1589239473546" duration="7144000" />
+      <workItem from="1589297723220" duration="3374000" />
     </task>
     <servers />
   </component>
@@ -152,26 +204,26 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="23" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1584804177737" />
-    <state x="476" y="81" key="#com.intellij.ide.util.MemberChooser" timestamp="1585599328129">
+    <state x="476" y="81" key="#com.intellij.ide.util.MemberChooser" timestamp="1586978382302">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="476" y="81" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1585599328129" />
+    <state x="476" y="81" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1586978382302" />
     <state x="417" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1585517605599">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="417" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1585517605599" />
-    <state x="413" y="120" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1585920912050">
+    <state x="413" y="120" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1588901468515">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="413" y="120" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1585920912050" />
+    <state x="413" y="120" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1588901468515" />
     <state x="407" y="243" key="ComposerCompositePathDialog" timestamp="1584803897991">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="407" y="243" key="ComposerCompositePathDialog/0.0.1366.728@0.0.1366.728" timestamp="1584803897991" />
-    <state x="462" y="106" key="FileChooserDialogImpl" timestamp="1585848908975">
+    <state x="462" y="106" key="FileChooserDialogImpl" timestamp="1586983385682">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="462" y="106" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1585848908975" />
+    <state x="462" y="106" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1586983385682" />
     <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1585517739694">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -188,14 +240,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1585517739694" />
-    <state x="518" y="288" key="NewPhpFileDialog" timestamp="1586470952645">
+    <state x="518" y="288" key="NewPhpFileDialog" timestamp="1586990066168">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="518" y="288" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1586470952645" />
-    <state x="184" y="7" key="SettingsEditor" timestamp="1585525002118">
+    <state x="518" y="288" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1586990066168" />
+    <state x="184" y="7" key="SettingsEditor" timestamp="1586735068409">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="184" y="7" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1585525002118" />
+    <state x="184" y="7" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1586735068409" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1586122889477">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -204,10 +256,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="451" y="267" key="SymfonyPathDialog/0.0.1366.728@0.0.1366.728" timestamp="1584803965617" />
-    <state x="378" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1586529456606">
+    <state x="378" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1589297805745">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="378" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1586529456606" />
+    <state x="378" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1589297805745" />
+    <state x="492" y="282" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586993744094">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="492" y="282" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1586993744094" />
     <state x="405" y="59" key="com.jetbrains.php.test.PhpNewTestDialog" timestamp="1585527478518">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

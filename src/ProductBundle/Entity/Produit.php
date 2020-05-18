@@ -174,7 +174,7 @@ return $this->nomP;    }
     /**
      * @var string
      *
-     * @ORM\Column(name="nom_P", type="string", length=30, nullable=false)
+     * @ORM\Column(name="nom_P", type="string", length=100, nullable=true)
      */
     private $nomP;
 
@@ -188,7 +188,7 @@ return $this->nomP;    }
     /**
      * @var string
      *
-     * @ORM\Column(name="marque_P", type="string", length=20, nullable=false)
+     * @ORM\Column(name="marque_P", type="string", length=20, nullable=true)
      */
     private $marqueP;
 
@@ -197,28 +197,68 @@ return $this->nomP;    }
      *
      * @ORM\Column(name="categorie_P", type="string", length=20, nullable=true)
      */
-    private $categorieP = 'NULL';
+    private $categorieP ;
 
     /**
      * @var string
      *
      * @ORM\Column(name="couleur_P", type="string", length=20, nullable=true)
      */
-    private $couleurP = 'NULL';
+    private $couleurP;
 
     /**
      * @var float
      *
-     * @ORM\Column(name="prix_P", type="float", precision=10, scale=0, nullable=false)
+     * @ORM\Column(name="prix_P", type="float",nullable=true)
      */
     private $prixP;
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="tel", type="integer", nullable=true)
+     */
+    private $tel;
+
+    /**
+     * @return float
+     */
+    public function getTel()
+    {
+        return $this->tel;
+    }
+
+    /**
+     * @param float $tel
+     */
+    public function setTel($tel)
+    {
+        $this->tel = $tel;
+    }
 
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="date", type="date", nullable=false)
+     * @ORM\Column(name="date", type="date", nullable=true)
      */
     private $date;
+
+
+
+    /**
+     * @return mixed
+     */
+    public function getUserid()
+    {
+        return $this->userid;
+    }
+
+    /**
+     * @param mixed $userid
+     */
+    public function setUserid($userid)
+    {
+        $this->userid = $userid;
+    }
 
     /**
      * @var string
@@ -227,6 +267,10 @@ return $this->nomP;    }
      */
     private $photoP ;
 
-
+    /**
+     * @ORM\ManyToOne(targetEntity="UserBundle\Entity\User")
+     * @ORM\JoinColumn(name="userId", referencedColumnName="id")
+     */
+     private $userid ;
 }
 

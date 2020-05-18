@@ -22,8 +22,9 @@ class ProduitController extends Controller
 
     public function createAction(Request $request)
     {
-        $memebre = $this->container->get('security.token_storage')->getToken()->getUser();
+      $user=$this->getUser();
         $produit = new Produit();
+        $produit->setUserid($user);
         $form = $this->createForm('ProductBundle\Form\ProduitType', $produit);
         $form->handleRequest($request);
         if ($form->isValid()) {
@@ -51,7 +52,39 @@ class ProduitController extends Controller
 
 }
 
+    public function create2Action(Request $request)
+    {
+        $user=$this->getUser();
 
+        $produit = new Produit();
+        $produit->setUserid($user);
+        $form = $this->createForm('ProductBundle\Form\ProduitType', $produit);
+        $form->handleRequest($request);
+        if ($form->isValid()) {
+            //var_dump($request->files->get('productbundle_produit')['imageName']);
+            $file=$request->files->get('productbundle_produit')['imageName'];
+            //var_dump($file);
+            $uploads_directory=$this->getParameter('uploads_directory');
+
+            $fileName = $file->getClientOriginalName();
+            //var_dump($fileName);
+
+            $file->move(
+                $uploads_directory,$fileName
+            );
+            $produit->setPhotoP($fileName);
+            $produit->setDate(new \DateTime());
+
+            $em = $this->getDoctrine()->getManager();
+            $em->persist($produit);
+            $em->flush();
+            echo "<script> alert(\" Produit ajouté avec succès \")</script>";
+        }
+
+        return $this->render('@Product/Client/ajouterProduit.html.twig', array('form' => $form->createView()));
+        $this->addFlash("success", "projet creer avec succee");
+
+    }
 
     public function showProduitAction(Request $request)
     {
@@ -149,7 +182,15 @@ class ProduitController extends Controller
             return $this->redirectToRoute('showProd');
         }
 
+    public function annulerClientAction($idP){
+        $em = $this->getDoctrine()->getManager();
+        $produits = $em->getRepository("ProductBundle:Produit")->find($idP);
+        $em->remove($produits);
+        $em->flush();
 
+
+        return $this->redirectToRoute('showProdClient');
+    }
 
 
     public function showHistoryProduitAction()
@@ -170,7 +211,7 @@ class ProduitController extends Controller
         $resultt = $paginator->paginate(
             $produits,
             $request->query->getInt('page', 1),
-            $request->query->getInt('limit', 3)
+            $request->query->getInt('limit', 5)
 
         );
 
@@ -231,14 +272,33 @@ class ProduitController extends Controller
 
         $em = $this->getDoctrine()->getManager();
         $rep = $em->getRepository('ProductBundle:Produit')->findBy([], ['prixP' => 'DESC']);
-        return $this->render( '@Product/Client/afficheProduit.html.twig', array('produits'=> $rep));
+
+        $paginator = $this->get('knp_paginator');
+        $resultt = $paginator->paginate(
+            $rep,
+            $request->query->getInt('page', 1),
+            $request->query->getInt('limit', 3)
+
+        );
+
+        return $this->render( '@Product/Client/afficheProduit.html.twig', array('produits'=> $resultt));
     }
     public function lowAction(Request $request)
     {
 
         $em = $this->getDoctrine()->getManager();
         $rep = $em->getRepository('ProductBundle:Produit')->findBy([], ['prixP' => 'ASC']);
-        return $this->render( '@Product/Client/afficheProduit.html.twig', array('produits'=> $rep));
+
+        $paginator = $this->get('knp_paginator');
+        $resultt = $paginator->paginate(
+            $rep,
+            $request->query->getInt('page', 1),
+            $request->query->getInt('limit', 3)
+
+        );
+
+
+        return $this->render( '@Product/Client/afficheProduit.html.twig', array('produits'=> $resultt));
     }
 
 }

@@ -60,6 +60,7 @@
                   <th>Categorie</th>
                   <th>Couleur</th>
                   <th>Prix</th>
+                  <th>Téléphone</th>
                   <th>Photo</th>
 
 
@@ -73,6 +74,7 @@
                     <td>{{ i.categorieP}}</td>
                     <td>{{ i.couleurP}}</td>
                     <td>{{ i.prixP}}</td>
+                    <td>{{ i.tel}}</td>
                     <td><img src="{{ asset('public/uploads/')~i.photoP}}" alt="message user image" class="direct-chat-img" ></td>
                     <td><a href="{{ path('prod_update',{'idP':i.idP}) }}">
                       <button type="button" class="btn btn-primary">

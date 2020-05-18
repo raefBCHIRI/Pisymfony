@@ -25,7 +25,7 @@ class ProduitType extends AbstractType
             ->add('categorieP')
             ->add('couleurP')
             ->add('prixP')
-            ->add('date')
+            ->add('tel')
             ->add('imageName',FileType::class,[
                 'mapped'=> false,
                 'label' =>'Joindre un photo '

@@ -1,10 +1,14 @@
-{% extends 'base.html.twig' %}
+{% extends 'base2.html.twig' %}
 
 {% block content %}
 
 
-    {{ form_start(form)}}
+
     <div class="container">
+        {{ form_start(form)}}
+        <br>
+        <br>
+        <br>
         <h1>Ajouter un Produit</h1>
 
 
@@ -14,13 +18,15 @@
             {{ form_errors(form.nomP)}}
 
         </div>
+
         <div class="form-group">
             {{ form_label(form.typeP, 'Type' )}} <br>
             {{ form_widget(form.typeP,{'attr':{'class':'form-control'}})}}
             {{ form_errors(form.typeP)}}
 
         </div>
-
+        <br>
+        <br>
         <div class="form-group">
             {{ form_label(form.marqueP, 'Marque' )}}
             {{ form_widget(form.marqueP,{'attr':{'class':'form-control'}})}}
@@ -46,6 +52,7 @@
             {{ form_errors(form.prixP)}}
 
         </div>
+
         <div class="form-group">
             {{ form_label(form.tel, 'Téléphone' )}}
             {{ form_widget(form.tel,{'attr':{'class':'form-control'}})}}
@@ -55,25 +62,21 @@
 
 
         <div class="form-group">
-            {{ form_label(form.imageName, 'Photo' )}} <br>
             {{ form_row(form.imageName,{'attr':{'class':'form-control'}})}}
 
 
         </div>
 
-        <br>
-
         <div class="form-group">
 
-                {{ form_widget(form.captcha) }}
-
-
-
+            {{ form_widget(form.captcha) }}
+            <br>
         </div>
 
+        <br>
         <div class="col-md-12 form-group p_star"> {{ form_row(form.Save)}}</div>
-
+        {{ form_end(form)}}
     </div>
-    {{ form_end(form)}}
+
 
 {% endblock %}
