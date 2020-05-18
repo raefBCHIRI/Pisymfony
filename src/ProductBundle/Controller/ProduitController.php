@@ -16,6 +16,8 @@ use Symfony\Component\HttpFoundation\JsonResponse;
 use ProductBundle\Entity\Util;
 use ProductBundle\Entity\Inutil;
 use ProductBundle\Entity\Promotion;
+use Symfony\Component\Serializer\Normalizer\ObjectNormalizer;
+use Symfony\Component\Serializer\Serializer;
 
 class ProduitController extends Controller
 {
@@ -159,6 +161,16 @@ class ProduitController extends Controller
 
     }
 
+
+
+    public function showHistoryProduitMobileAction()
+    {
+        $produits = $this->getDoctrine()->getRepository(\ProductBundle\Entity\Produit::class)->findAll();
+        $serializer = new Serializer([new ObjectNormalizer()]);
+        $formatted = $serializer->normalize($produits);
+        return new JsonResponse($formatted);
+
+    }
 
 
     public function showProduitClientAction(Request $request)

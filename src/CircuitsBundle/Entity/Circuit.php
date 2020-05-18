@@ -3,6 +3,7 @@
 namespace CircuitsBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints\Time;
 
 /**
  * Circuit
@@ -50,11 +51,41 @@ class Circuit
     private $end;
 
     /**
+     * @var float
+     *
+     * @ORM\Column(name="distance", type="float")
+     */
+    private $distance;
+
+
+
+
+
+
+    /**
      * @var string
      *
      * @ORM\Column(name="difficulty", type="string", length=20)
      */
     private $difficulty;
+
+    /**
+     * @return float
+     */
+    public function getDistance()
+    {
+        return $this->distance;
+    }
+
+    /**
+     * @param float $distance
+     */
+    public function setDistance($distance)
+    {
+        $this->distance = $distance;
+    }
+
+
 
 
     /**

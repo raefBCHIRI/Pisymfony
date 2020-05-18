@@ -40,6 +40,10 @@ showHistoryProd:
     path:     /HistoryProd
     defaults: { _controller: ProductBundle:Produit:showHistoryProduit }
 
+showHistoryProdM:
+    path:     /showHistoryProduitMobile
+    defaults: { _controller: ProductBundle:Produit:showHistoryProduitMobile }
+
 showProdClient:
     path:     /showProdClient
     defaults: { _controller: ProductBundle:Produit:showProduitClient }

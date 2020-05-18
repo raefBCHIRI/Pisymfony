@@ -28,6 +28,11 @@ update_circuit:
         path:     /update/{id}
         defaults: { _controller: CircuitsBundle:Circuits:updateCircuit }
 
+update_circuit_Mobile:
+  path:     /updateCircuitMobile/{id}/{nom}/{begin}/{pause}/{end}/{difficulty}/{distance}
+  defaults: { _controller: CircuitsBundle:Circuits:updateCircuitMobile }
+
+
 update_station:
     path:     /updateS/{id}
     defaults: { _controller: CircuitsBundle:Stations:updateStation }
@@ -36,3 +41,47 @@ update_station:
 creates:
     path:     /addStation
     defaults: { _controller: CircuitsBundle:Stations:ajouter }
+
+
+circuits_api_homepage:
+  path:     /
+  defaults: { _controller: CircuitsBundle:Default:index }
+
+get_allCircuits:
+  path:     /getCircuitMobile
+  defaults: { _controller: CircuitsBundle:Circuits:getCircuitMobile }
+
+find_high_Diff:
+  path:     /HighDistMobile
+  defaults: { _controller: CircuitsBundle:Circuits:highDistMobile}
+
+find_low_Dist:
+  path:     /LowDistMobile
+  defaults: { _controller: CircuitsBundle:Circuits:lowDistMobile}
+
+
+delete_Circuit_mobile:
+  path:     /deleteCircuitMobile/{id}
+  defaults: { _controller: CircuitsBundle:Circuits:deleteCircuitMobile}
+
+
+delete_Station_mobile:
+  path:     /deleteStationMobile/{id}
+  defaults: { _controller: CircuitsBundle:Stations:deleteStationMobile}
+
+add_circuit_mobile:
+  path:     /addCircuitMobile/{nom}/{begin}/{pause}/{end}/{difficulty}/{distance}
+  defaults: { _controller: CircuitsBundle:Circuits:addCircuitMobile  }
+
+add_station_mobile:
+  path:     /addStationMobile/{nom}/{lattitude}/{longitude}
+  defaults: { _controller: CircuitsBundle:Stations:addStationMobile }
+
+get_allStations:
+  path:     /getStationMobile
+  defaults: { _controller: CircuitsBundle:Stations:getStationMobile }
+
+
+showUserMobile:
+  path:     /showUserMobile
+  defaults: { _controller: CircuitsBundle:Circuits:showUserMobile }
