@@ -1,0 +1,5 @@
+
+get_circuits:
+    path:     /getCircuits
+    defaults: { _controller: CircuitsBundle:Circuits:getCircuits }
+
